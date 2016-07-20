@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
+require('dotenv').load();
+console.log(process.env.FIREBASE_AUTH)
+
 var routes = require('./routes/index');
 
 var app = express();
